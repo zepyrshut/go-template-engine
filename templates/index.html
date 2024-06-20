@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Hola mundo!</title>
+    <title>{{ .Title }}</title>
 </head>
 <body>
 
-    <h1>¡Hola mundo!</h1>
+    <h1>¡Hola {{ .Name }}!</h1>
 
     <h2>Ejemplo mínimo de una plantilla procesada desde Go</h2>
 
     <p>Este documento proviene de una plantilla llamada <code>index.html</code>.</p>
 
-    <p>No tiene variables, ni estilos ni formato.</p>
+    <p>Ahora tiene variables, pero no tiene estilos ni formato.</p>
 
 </body>
 </html>
