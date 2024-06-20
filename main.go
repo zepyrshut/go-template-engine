@@ -13,7 +13,6 @@ type TemplateData struct {
 
 // renderTemplate se encarga de obtener la ruta de la plantilla, hacer el
 // procesamiento y su ejecución.
-
 func renderTemplate(w http.ResponseWriter, templateName string, data TemplateData) {
 	path := filepath.Join("templates", templateName)
 	tmpl, _ := template.ParseFiles(path)
